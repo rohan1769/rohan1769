@@ -66,7 +66,7 @@ I am a **Senior Software Engineer** at **Entiovi Technologies**, specializing in
 
 ### 📊 **LeetCode Stats**
 
-![LeetCode Stats](https://leetcard.io/api?username=YOUR-LEETCODE-USERNAME&theme=marketing&font=Inter&ext=heatmap)
+![LeetCode Stats](https://leetcard.io/api?username=Weishuching&theme=marketing&font=Inter&ext=heatmap)
 
 ---
 
