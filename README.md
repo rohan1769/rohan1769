@@ -1,25 +1,33 @@
-<!-- ════════════════════════ HERO ════════════════════════ -->
-![Header](https://capsule-render.vercel.app/api?type=venom&color=0:1a1b26,50:24283b,100:bb9af7&height=280&text=Rohan%20Singh&fontSize=60&fontColor=c0caf5&animation=twinkling&desc=I%20design%20the%20systems%20other%20systems%20depend%20on.&descSize=20&descColor=7dcfff&descAlignY=68)
+<!-- ═══════════════════════════════ HERO ═══════════════════════════════ -->
+![Header](https://capsule-render.vercel.app/api?type=waving&color=0:16161e,25:1a1b26,55:414868,80:7aa2f7,100:bb9af7&height=310&text=ROHAN%20SINGH&fontSize=68&fontColor=c0caf5&fontAlignY=32&stroke=bb9af7&strokeWidth=1&desc=Backend%20%E2%9C%A6%20Data%20Platforms%20%E2%9C%A6%20GenAI%20Infrastructure&descSize=22&descColor=7dcfff&descAlignY=52&animation=fadeIn)
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=19&duration=3200&pause=1000&color=BB9AF7&center=true&vCenter=true&width=720&height=60&lines=%24+whoami+%E2%86%92+backend+%2B+data+%2B+genai+engineer;%24+scale+%E2%86%92+20%2C000%2B+vehicles+%C2%B7+3+TB%2B+pipelines+%C2%B7+3%2C000%2B+doc+RAG;%24+uptime+%E2%86%92+zero-downtime+releases%2C+privacy+by+default" alt="typing"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=900&color=BB9AF7&center=true&vCenter=true&width=780&height=64&lines=Spring+Boot+microservices+that+track+20%2C000%2B+vehicles+live;Airflow+pipelines+moving+3+TB%2B+for+World+Bank+%C2%B7+Stanford+research;Self-hosted+LLM+platforms+%E2%80%94+RAG%2C+agents%2C+zero+data+leaves+the+building" alt="typing"/>
+
+<br/>
+
+<!-- ── nav ── -->
+<a href="#-arsenal"><img src="https://img.shields.io/badge/⚙_ARSENAL-1a1b26?style=for-the-badge&logoColor=bb9af7"/></a>
+<a href="#-flagship-builds"><img src="https://img.shields.io/badge/🚀_BUILDS-1a1b26?style=for-the-badge"/></a>
+<a href="#-trajectory"><img src="https://img.shields.io/badge/🧭_TRAJECTORY-1a1b26?style=for-the-badge"/></a>
+<a href="#-numbers-that-survived-production"><img src="https://img.shields.io/badge/📟_IMPACT-1a1b26?style=for-the-badge"/></a>
 
 <br/><br/>
 
-<a href="mailto:rhnsngh1999@gmail.com"><img src="https://img.shields.io/badge/Email-1a1b26?style=for-the-badge&logo=gmail&logoColor=f7768e"/></a>&nbsp;
-<a href="https://www.linkedin.com/in/rohansinghin"><img src="https://img.shields.io/badge/LinkedIn-1a1b26?style=for-the-badge&logo=linkedin&logoColor=7dcfff"/></a>&nbsp;
-<a href="https://portfolio.rhntech.in"><img src="https://img.shields.io/badge/Portfolio-1a1b26?style=for-the-badge&logo=firefox&logoColor=bb9af7"/></a>&nbsp;
-<img src="https://img.shields.io/badge/Kolkata,_IN-1a1b26?style=for-the-badge&logo=googlemaps&logoColor=9ece6a"/>
+<a href="mailto:rhnsngh1999@gmail.com"><img src="https://img.shields.io/badge/Email-f7768e?style=flat-square&logo=gmail&logoColor=1a1b26"/></a>
+<a href="https://www.linkedin.com/in/rohansinghin"><img src="https://img.shields.io/badge/LinkedIn-7dcfff?style=flat-square&logo=linkedin&logoColor=1a1b26"/></a>
+<a href="https://portfolio.rhntech.in"><img src="https://img.shields.io/badge/Portfolio-bb9af7?style=flat-square&logo=firefox&logoColor=1a1b26"/></a>
+<img src="https://img.shields.io/badge/Kolkata,_India-9ece6a?style=flat-square&logo=googlemaps&logoColor=1a1b26"/>
 
 </div>
 
 <br/>
 
-<!-- ════════════════════════ ABOUT ════════════════════════ -->
+<!-- ═══════════════════════════════ ABOUT ═══════════════════════════════ -->
 <img align="right" width="380" src="https://github-readme-stats.vercel.app/api?username=rohan1769&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000&title_color=bb9af7&icon_color=7dcfff&text_color=a9b1d6"/>
 
-### 〔 about 〕
+## ⌘ About
 
 ```yaml
 role:      Senior Software Engineer @ Entiovi
@@ -41,38 +49,94 @@ principles:
 
 ---
 
-<!-- ════════════════════════ ARCHITECTURE ════════════════════════ -->
-### 〔 the stack, as I'd whiteboard it 〕
+<!-- ═══════════════════════════════ ARSENAL ═══════════════════════════════ -->
+## ⚙ Arsenal
 
-```mermaid
-%%{init: {'theme':'base','themeVariables':{
-  'primaryColor':'#1a1b26','primaryTextColor':'#c0caf5','primaryBorderColor':'#bb9af7',
-  'lineColor':'#7dcfff','secondaryColor':'#24283b','tertiaryColor':'#16161e',
-  'clusterBkg':'#1f2335','clusterBorder':'#414868','fontFamily':'Fira Code'}}}%%
-flowchart LR
-    subgraph L1["⚡ INGEST"]
-        direction TB
-        a1["Java · Spring Boot"] --- a2["Kafka · RabbitMQ · ActiveMQ"] --- a3["SSE + Redis Pub/Sub"]
-    end
-    subgraph L2["🔄 PIPELINE · 3 TB+"]
-        direction TB
-        b1["Airflow · Dagster"] --- b2["Parquet checkpoints"] --- b3["20+ sources → 1 schema"]
-    end
-    subgraph L3["🤖 INTELLIGENCE"]
-        direction TB
-        c1["RAG · Docling"] --- c2["Qdrant · pgvector"] --- c3["LLaMA 70B · vLLM · agents"]
-    end
-    subgraph L0["🔐 TRUST — runs beneath everything"]
-        d1["Differential Privacy · PII masking · GDPR/CCPA · OpenTelemetry"]
-    end
-    L1 ==> L2 ==> L3
-    L0 -.-> L1 & L2 & L3
-```
+> Not a wall of icons — this is where my depth actually sits.
+
+<table>
+<tr>
+<td width="34%" valign="top" align="center">
+
+### 🏗️ Backend & Microservices
+<sub>**PRIMARY WEAPON · 4+ YEARS**</sub>
+
+`████████████████░` 
+
+<img src="https://img.shields.io/badge/Java-1a1b26?style=for-the-badge&logo=openjdk&logoColor=f7768e"/> <img src="https://img.shields.io/badge/Spring_Boot-1a1b26?style=for-the-badge&logo=springboot&logoColor=9ece6a"/>
+<img src="https://img.shields.io/badge/Microservices_Architecture-1a1b26?style=for-the-badge&logoColor=bb9af7"/>
+<img src="https://img.shields.io/badge/Hibernate_/_JPA-1a1b26?style=flat-square&logo=hibernate&logoColor=7dcfff"/> <img src="https://img.shields.io/badge/Spring_MVC-1a1b26?style=flat-square&logo=spring&logoColor=9ece6a"/> <img src="https://img.shields.io/badge/REST_APIs-1a1b26?style=flat-square&logoColor=c0caf5"/> <img src="https://img.shields.io/badge/Concurrency_&_Multithreading-1a1b26?style=flat-square&logoColor=f7768e"/>
+
+<sub>*Event-driven services, LLD/HLD, design patterns — the layer everything else here stands on.*</sub>
+
+</td>
+<td width="33%" valign="top" align="center">
+
+### 🤖 AI & GenAI Systems
+<sub>**CURRENT FRONTIER · SHIPPING NOW**</sub>
+
+`██████████████░░░`
+
+<img src="https://img.shields.io/badge/RAG_Pipelines-1a1b26?style=for-the-badge&logo=databricks&logoColor=bb9af7"/> <img src="https://img.shields.io/badge/Multi--Agent_Systems-1a1b26?style=for-the-badge&logo=probot&logoColor=7dcfff"/>
+<img src="https://img.shields.io/badge/LLM_Serving_·_vLLM_·_Ollama-1a1b26?style=for-the-badge&logo=lightning&logoColor=f7768e"/>
+<img src="https://img.shields.io/badge/LangChain-1a1b26?style=flat-square&logo=langchain&logoColor=9ece6a"/> <img src="https://img.shields.io/badge/LLaMA_70B-1a1b26?style=flat-square&logo=meta&logoColor=7dcfff"/> <img src="https://img.shields.io/badge/Docling_·_Document_AI-1a1b26?style=flat-square&logo=readthedocs&logoColor=9ece6a"/> <img src="https://img.shields.io/badge/Qdrant-1a1b26?style=flat-square&logo=qdrant&logoColor=bb9af7"/> <img src="https://img.shields.io/badge/pgvector-1a1b26?style=flat-square&logo=postgresql&logoColor=7dcfff"/> <img src="https://img.shields.io/badge/MCP-1a1b26?style=flat-square&logo=anthropic&logoColor=c0caf5"/> <img src="https://img.shields.io/badge/N8N-1a1b26?style=flat-square&logo=n8n&logoColor=f7768e"/>
+
+<sub>*Dense + sparse retrieval, agent orchestration, privacy-gated inference — all self-hosted.*</sub>
+
+</td>
+<td width="33%" valign="top" align="center">
+
+### 🔄 Data Engineering
+<sub>**TERABYTE-SCALE · OWNED END-TO-END**</sub>
+
+`███████████████░░`
+
+<img src="https://img.shields.io/badge/Apache_Airflow-1a1b26?style=for-the-badge&logo=apacheairflow&logoColor=7dcfff"/> <img src="https://img.shields.io/badge/Dagster-1a1b26?style=for-the-badge&logo=dagster&logoColor=bb9af7"/>
+<img src="https://img.shields.io/badge/ETL_/_ELT_·_Batch_+_Incremental-1a1b26?style=for-the-badge&logoColor=9ece6a"/>
+<img src="https://img.shields.io/badge/Parquet-1a1b26?style=flat-square&logo=apache&logoColor=9ece6a"/> <img src="https://img.shields.io/badge/Python-1a1b26?style=flat-square&logo=python&logoColor=7dcfff"/> <img src="https://img.shields.io/badge/MinIO_S3-1a1b26?style=flat-square&logo=minio&logoColor=f7768e"/> <img src="https://img.shields.io/badge/dlt-1a1b26?style=flat-square&logoColor=c0caf5"/> <img src="https://img.shields.io/badge/Data_Modeling-1a1b26?style=flat-square&logoColor=bb9af7"/>
+
+<sub>*Checkpointed, resumable, runtime-configurable pipelines — 20+ sources, one canonical schema.*</sub>
+
+</td>
+</tr>
+<tr>
+<td valign="top" align="center">
+
+### 📡 Distributed & Messaging
+<sub>**BATTLE-TESTED AT FLEET SCALE**</sub>
+
+`███████████████░░`
+
+<img src="https://img.shields.io/badge/Kafka-1a1b26?style=flat-square&logo=apachekafka&logoColor=c0caf5"/> <img src="https://img.shields.io/badge/RabbitMQ-1a1b26?style=flat-square&logo=rabbitmq&logoColor=f7768e"/> <img src="https://img.shields.io/badge/ActiveMQ-1a1b26?style=flat-square&logo=apache&logoColor=9ece6a"/> <img src="https://img.shields.io/badge/Redis_·_Cache_+_Pub/Sub-1a1b26?style=flat-square&logo=redis&logoColor=f7768e"/> <img src="https://img.shields.io/badge/Server--Sent_Events-1a1b26?style=flat-square&logoColor=7dcfff"/> <img src="https://img.shields.io/badge/Event--Driven_Architecture-1a1b26?style=flat-square&logoColor=bb9af7"/>
+
+</td>
+<td valign="top" align="center">
+
+### ☁️ Cloud & DevOps
+<sub>**ZERO-DOWNTIME BY DEFAULT**</sub>
+
+`█████████████░░░░`
+
+<img src="https://img.shields.io/badge/Docker-1a1b26?style=flat-square&logo=docker&logoColor=7dcfff"/> <img src="https://img.shields.io/badge/Kubernetes-1a1b26?style=flat-square&logo=kubernetes&logoColor=bb9af7"/> <img src="https://img.shields.io/badge/GCP-1a1b26?style=flat-square&logo=googlecloud&logoColor=9ece6a"/> <img src="https://img.shields.io/badge/Azure-1a1b26?style=flat-square&logoColor=7dcfff"/> <img src="https://img.shields.io/badge/Jenkins_CI/CD-1a1b26?style=flat-square&logo=jenkins&logoColor=f7768e"/> <img src="https://img.shields.io/badge/Nginx-1a1b26?style=flat-square&logo=nginx&logoColor=9ece6a"/> <img src="https://img.shields.io/badge/Linux-1a1b26?style=flat-square&logo=linux&logoColor=c0caf5"/>
+
+</td>
+<td valign="top" align="center">
+
+### 🔐 Security & Observability
+<sub>**PRIVACY IS A FEATURE, NOT A PATCH**</sub>
+
+`██████████████░░░`
+
+<img src="https://img.shields.io/badge/Differential_Privacy-1a1b26?style=flat-square&logoColor=f7768e"/> <img src="https://img.shields.io/badge/Column--Level_Encryption-1a1b26?style=flat-square&logoColor=bb9af7"/> <img src="https://img.shields.io/badge/GDPR_/_CCPA-1a1b26?style=flat-square&logoColor=9ece6a"/> <img src="https://img.shields.io/badge/OpenTelemetry-1a1b26?style=flat-square&logo=opentelemetry&logoColor=7dcfff"/> <img src="https://img.shields.io/badge/Grafana-1a1b26?style=flat-square&logo=grafana&logoColor=f7768e"/> <img src="https://img.shields.io/badge/Apache_Superset-1a1b26?style=flat-square&logo=apachesuperset&logoColor=9ece6a"/>
+
+</td>
+</tr>
+</table>
 
 ---
 
-<!-- ════════════════════════ NUMBERS ════════════════════════ -->
-### 〔 numbers that survived production 〕
+<!-- ═══════════════════════════════ NUMBERS ═══════════════════════════════ -->
+## 📟 Numbers that survived production
 
 <div align="center">
 
@@ -95,8 +159,8 @@ flowchart LR
 
 ---
 
-<!-- ════════════════════════ PROJECTS ════════════════════════ -->
-### 〔 classified builds — codenames only 〕
+<!-- ═══════════════════════════════ BUILDS ═══════════════════════════════ -->
+## 🚀 Flagship Builds
 
 <table>
 <tr>
@@ -163,44 +227,49 @@ RAG over **3,000+ documents** on **LLaMA 70B** — fully on-premise, not a singl
 
 ---
 
-<!-- ════════════════════════ TIMELINE ════════════════════════ -->
-### 〔 trajectory 〕
+<!-- ═══════════════════════════════ TRAJECTORY ═══════════════════════════════ -->
+## 🧭 Trajectory
+
+> Four stops. Each one a bigger system than the last.
 
 ```mermaid
 %%{init: {'theme':'base','themeVariables':{
-  'cScale0':'#bb9af7','cScale1':'#7dcfff','cScale2':'#9ece6a','cScale3':'#f7768e',
-  'primaryTextColor':'#1a1b26','fontFamily':'Fira Code'}}}%%
-timeline
-    title backend engineer → platform owner → genai builder
-    2021 · 22 : HighRadius — SDE Intern : Java EE + React, enterprise fintech
-    2022 · 24 : Entiovi — Software Engineer : Real-time fleet at 99% accuracy : Spring Boot + ActiveMQ + Redis
-    2024 : ↑ Senior in 16 months : Xafe.ai privacy engine, TB-scale : Project ATLAS ships
-    2025 · 26 : GenAI platform era : Namaiste.ai — on-prem RAG : Idéevin V2.0 — multi-agent AI
+  'primaryColor':'#1f2335','primaryTextColor':'#c0caf5','primaryBorderColor':'#bb9af7',
+  'lineColor':'#565f89','fontFamily':'Fira Code','fontSize':'14px',
+  'clusterBkg':'#16161e','clusterBorder':'#414868'}}}%%
+flowchart LR
+    S1(("🎓")) ==> S2(("⚙️")) ==> S3(("📈")) ==> S4(("🤖"))
+
+    S1 --- N1["<b>2021 – 22 · HighRadius</b><br/>SDE Intern<br/><i>Java EE + React,<br/>enterprise fintech delivery</i>"]
+    S2 --- N2["<b>2022 – 24 · Entiovi</b><br/>Software Engineer<br/><i>Real-time fleet platform<br/>Spring Boot · ActiveMQ · Redis</i>"]
+    S3 --- N3["<b>2024 · Promoted in 16 mo</b><br/>Senior Software Engineer<br/><i>Owned Xafe.ai privacy engine<br/>+ Project ATLAS delivery</i>"]
+    S4 --- N4["<b>2025 – now · GenAI Era</b><br/>Platform Builder<br/><i>Namaiste.ai on-prem RAG<br/>→ Idéevin V2.0 multi-agent AI</i>"]
+
+    N2 -.-> A2[/"🎯 99% accuracy · 20K+ vehicles"/]
+    N3 -.-> A3[/"🔐 GDPR/CCPA at TB scale · 🌍 20+ sources"/]
+    N4 -.-> A4[/"📚 3,000+ doc RAG · 🦙 LLaMA 70B · vLLM"/]
+
+    classDef stop fill:#bb9af7,stroke:#7dcfff,stroke-width:3px,color:#1a1b26,font-weight:bold
+    classDef card fill:#1f2335,stroke:#414868,stroke-width:1.5px,color:#c0caf5
+    classDef win fill:#16161e,stroke:#9ece6a,stroke-width:1px,color:#9ece6a,font-style:italic
+
+    class S1,S2,S3,S4 stop
+    class N1,N2,N3,N4 card
+    class A2,A3,A4 win
 ```
 
----
-
-<!-- ════════════════════════ STACK ════════════════════════ -->
-### 〔 arsenal 〕
-
 <div align="center">
+<sub>
 
-<img src="https://skillicons.dev/icons?i=java,spring,python,bash,kafka,rabbitmq,redis,mysql,postgres,docker,kubernetes,gcp,azure,jenkins,nginx,linux,git&perline=9" alt="stack"/>
+**intern** ─── writes features&nbsp;&nbsp;→&nbsp;&nbsp;**engineer** ─── scales systems&nbsp;&nbsp;→&nbsp;&nbsp;**senior** ─── owns platforms&nbsp;&nbsp;→&nbsp;&nbsp;**builder** ─── ships AI products
 
-<br/><br/>
-
-<img src="https://img.shields.io/badge/Airflow-1a1b26?style=flat-square&logo=apacheairflow&logoColor=7dcfff"/> <img src="https://img.shields.io/badge/Dagster-1a1b26?style=flat-square&logo=dagster&logoColor=bb9af7"/> <img src="https://img.shields.io/badge/Parquet-1a1b26?style=flat-square&logo=apache&logoColor=9ece6a"/> <img src="https://img.shields.io/badge/MinIO-1a1b26?style=flat-square&logo=minio&logoColor=f7768e"/> <img src="https://img.shields.io/badge/LangChain-1a1b26?style=flat-square&logo=langchain&logoColor=9ece6a"/> <img src="https://img.shields.io/badge/Qdrant-1a1b26?style=flat-square&logo=qdrant&logoColor=bb9af7"/> <img src="https://img.shields.io/badge/pgvector-1a1b26?style=flat-square&logo=postgresql&logoColor=7dcfff"/> <img src="https://img.shields.io/badge/Ollama-1a1b26?style=flat-square&logo=ollama&logoColor=c0caf5"/> <img src="https://img.shields.io/badge/vLLM-1a1b26?style=flat-square&logo=lightning&logoColor=f7768e"/> <img src="https://img.shields.io/badge/Docling-1a1b26?style=flat-square&logo=readthedocs&logoColor=9ece6a"/> <img src="https://img.shields.io/badge/MCP-1a1b26?style=flat-square&logo=anthropic&logoColor=bb9af7"/> <img src="https://img.shields.io/badge/N8N-1a1b26?style=flat-square&logo=n8n&logoColor=f7768e"/> <img src="https://img.shields.io/badge/OpenTelemetry-1a1b26?style=flat-square&logo=opentelemetry&logoColor=7dcfff"/> <img src="https://img.shields.io/badge/Grafana-1a1b26?style=flat-square&logo=grafana&logoColor=f7768e"/> <img src="https://img.shields.io/badge/Superset-1a1b26?style=flat-square&logo=apachesuperset&logoColor=9ece6a"/>
-
+</sub>
 </div>
 
 ---
 
-<!-- ════════════════════════ NOW ════════════════════════ -->
-### 〔 currently 〕
-
-<table>
-<tr>
-<td>
+<!-- ═══════════════════════════════ NOW + STATS ═══════════════════════════════ -->
+## 🌱 Currently
 
 ```text
 shipping   ▸ Idéevin V2.0 — enterprise multi-agent AI platform
@@ -208,12 +277,6 @@ learning   ▸ agentic orchestration patterns (MCP · N8N · LangChain)
 deepening  ▸ privacy gateways for LLM inference
 exploring  ▸ document AI at scale with Docling
 ```
-
-</td>
-</tr>
-</table>
-
-<br/>
 
 <div align="center">
 
@@ -227,4 +290,4 @@ exploring  ▸ document AI at scale with Docling
 
 </div>
 
-![Footer](https://capsule-render.vercel.app/api?type=venom&color=0:bb9af7,50:24283b,100:1a1b26&height=140&section=footer)
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=0:bb9af7,20:7aa2f7,55:414868,100:16161e&height=140&section=footer)
