@@ -8,6 +8,7 @@
 <br/>
 
 <!-- ── nav ── -->
+<a href="#-how-i-think--the-stack-as-id-whiteboard-it"><img src="https://img.shields.io/badge/🧠_ARCHITECTURE-1a1b26?style=for-the-badge"/></a>
 <a href="#-arsenal"><img src="https://img.shields.io/badge/⚙_ARSENAL-1a1b26?style=for-the-badge&logoColor=bb9af7"/></a>
 <a href="#-flagship-builds"><img src="https://img.shields.io/badge/🚀_BUILDS-1a1b26?style=for-the-badge"/></a>
 <a href="#-trajectory"><img src="https://img.shields.io/badge/🧭_TRAJECTORY-1a1b26?style=for-the-badge"/></a>
@@ -46,6 +47,43 @@ principles:
 ```
 
 <br clear="right"/>
+
+---
+
+<!-- ═══════════════════════════════ ARCHITECTURE ═══════════════════════════════ -->
+## 🧠 How I think — the stack as I'd whiteboard it
+
+> The Arsenal below lists *what* I use. This is *how it fits together* — every system I've shipped follows this shape.
+
+```mermaid
+%%{init: {'theme':'base','themeVariables':{
+  'primaryColor':'#1f2335','primaryTextColor':'#c0caf5','primaryBorderColor':'#bb9af7',
+  'lineColor':'#7dcfff','secondaryColor':'#24283b','tertiaryColor':'#16161e',
+  'clusterBkg':'#16161e','clusterBorder':'#414868','fontFamily':'Fira Code'}}}%%
+flowchart LR
+    subgraph L1["⚡ INGEST"]
+        direction TB
+        a1["Java · Spring Boot<br/>microservices"] --- a2["Kafka · RabbitMQ<br/>ActiveMQ"] --- a3["SSE + Redis Pub/Sub<br/>stateless streaming"]
+    end
+    subgraph L2["🔄 PIPELINE · 3 TB+"]
+        direction TB
+        b1["Airflow · Dagster<br/>orchestration"] --- b2["Parquet checkpoints<br/>resumable by design"] --- b3["20+ sources<br/>→ 1 canonical schema"]
+    end
+    subgraph L3["🤖 INTELLIGENCE"]
+        direction TB
+        c1["RAG · Docling<br/>dense + sparse retrieval"] --- c2["Qdrant · pgvector<br/>vector knowledge layer"] --- c3["LLaMA 70B · vLLM<br/>multi-agent, self-hosted"]
+    end
+    subgraph L0["🔐 TRUST — runs beneath everything"]
+        d1["Differential Privacy · PII masking · column encryption · GDPR/CCPA · OpenTelemetry"]
+    end
+    L1 ==> L2 ==> L3
+    L0 -.-> L1 & L2 & L3
+
+    classDef layer fill:#1f2335,stroke:#414868,stroke-width:1.5px,color:#c0caf5
+    classDef trust fill:#16161e,stroke:#f7768e,stroke-width:1.5px,color:#f7768e
+    class a1,a2,a3,b1,b2,b3,c1,c2,c3 layer
+    class d1 trust
+```
 
 ---
 
